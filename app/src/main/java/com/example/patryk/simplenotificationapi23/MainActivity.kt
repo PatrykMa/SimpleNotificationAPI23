@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
                 .setContentTitle("Tytuł powiadomienia")
                 .setContentText("bardzo dlugi tekst który sam wymysliłem i zaierra mase literówek i błędów ")
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+                .setAutoCancel(true)
 
             with(NotificationManagerCompat.from(this)) {
                 // notificationId is a unique int for each notification that you must define
